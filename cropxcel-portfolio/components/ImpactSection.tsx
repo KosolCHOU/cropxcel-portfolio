@@ -123,14 +123,14 @@ export default function ImpactSection() {
                 </div>
 
                 {/* Interactive Calculator */}
-                <div className="relative backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 md:p-12 hover:bg-white/15 transition-all duration-300 shadow-2xl">
+                <div className="relative backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-6 md:p-8 hover:bg-white/15 transition-all duration-300 shadow-2xl">
                     {/* Decorative corner accents */}
                     <div className="absolute top-0 left-0 w-20 h-20 border-t-4 border-l-4 border-green-400 rounded-tl-3xl"></div>
                     <div className="absolute bottom-0 right-0 w-20 h-20 border-b-4 border-r-4 border-green-400 rounded-br-3xl"></div>
 
                     <div className="relative z-10">
                         {/* Calculator Header */}
-                        <div className="flex items-center justify-center mb-8">
+                        <div className="flex items-center justify-center mb-6">
                             <div className="inline-flex p-4 rounded-xl bg-gradient-to-br from-green-400 to-emerald-500 mr-4">
                                 <Calculator className="w-8 h-8 text-white" />
                             </div>
@@ -139,7 +139,7 @@ export default function ImpactSection() {
                             </h3>
                         </div>
 
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
                             {/* Input Section */}
                             <div className="space-y-6">
                                 <div>
@@ -173,23 +173,16 @@ export default function ImpactSection() {
                                         <span>500 ha</span>
                                     </div>
                                 </div>
-
-                                {/* Additional Info */}
-                                <div className="backdrop-blur-sm bg-white/5 border border-white/10 rounded-xl p-6">
-                                    <p className="text-green-100 text-sm leading-relaxed">
-                                        {t("calc_note")}
-                                    </p>
-                                </div>
                             </div>
 
                             {/* Output Section */}
                             <div className="flex items-center justify-center">
-                                <div className="text-center backdrop-blur-sm bg-gradient-to-br from-green-500/20 to-emerald-500/20 border-2 border-green-400/50 rounded-2xl p-10 w-full">
-                                    <p className="text-green-100 text-lg mb-4 font-medium">
+                                <div className="text-center backdrop-blur-sm bg-gradient-to-br from-green-500/20 to-emerald-500/20 border-2 border-green-400/50 rounded-2xl p-6 md:p-8 w-full">
+                                    <p className="text-green-100 text-base md:text-lg mb-3 font-medium">
                                         {t("calc_output_label")}
                                     </p>
                                     <div className="relative">
-                                        <div className="text-6xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-emerald-200 mb-2">
+                                        <div className="text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-emerald-200 mb-2">
                                             $
                                             {isVisible ? (
                                                 <CountUp
@@ -214,9 +207,9 @@ export default function ImpactSection() {
                 </div>
 
                 {/* Bottom CTA or Additional Info */}
-                <div className="text-center mt-12">
+                <div className="text-center mt-8">
                     <p className="text-green-100/80 text-sm max-w-2xl mx-auto">
-                        {t("calc_disclaimer")}
+                        {t("calc_note")}
                     </p>
                 </div>
             </div>

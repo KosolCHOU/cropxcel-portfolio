@@ -22,6 +22,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "CropXcel - Insight Agriculture for Cambodia",
   description: "AI-powered satellite imagery to enhance crop yield and save resources.",
+  icons: {
+    icon: "/images/satellite-emji.jpg",
+  },
 };
 
 export default function RootLayout({

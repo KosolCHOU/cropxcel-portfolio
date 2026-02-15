@@ -45,8 +45,8 @@ const translations: Translations = {
     calc_title: { en: "Calculate Your Potential Savings", kh: "គណនាការសន្សំដែលអាចធ្វើបានរបស់អ្នក" },
     calc_farm_size: { en: "Farm Size (Hectares)", kh: "ទំហំដីស្រែ (ហិកតា)" },
     calc_note: {
-        en: "Based on industry data showing average savings of $171-$201 per hectare per season through precision agriculture techniques.",
-        kh: "ផ្អែកលើទិន្នន័យឧស្សាហកម្មដែលបង្ហាញពីការសន្សំជាមធ្យម ១៧១-២០១ ដុល្លារក្នុងមួយហិកតាក្នុងមួយរដូវ តាមរយៈបច្ចេកទេសកសិកម្មសុក្រិត។"
+        en: "Based on real-world precision farming data ($171-$201/ha/season). Results may vary by crop type, region, and implementation.",
+        kh: "ផ្អែកលើទិន្នន័យកសិកម្មសុក្រិតជាក់ស្តែង ($១៧១-$២០១/ហិកតា/រដូវ)។ លទ្ធផលអាចប្រែប្រួលអាស្រ័យលើប្រភេទដំណាំ តំបន់ និងការអនុវត្ត។"
     },
     calc_output_label: { en: "Estimated Seasonal Savings", kh: "ការសន្សំប្រចាំរដូវដែលបានប៉ាន់ស្មាន" },
     calc_output_sub: { en: "Per growing season", kh: "ក្នុងមួយរដូវដាំដុះ" },
