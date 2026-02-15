@@ -6,9 +6,10 @@ interface SmoothScrollLinkProps {
     href: string;
     children: React.ReactNode;
     className?: string;
+    onClick?: () => void;
 }
 
-export default function SmoothScrollLink({ href, children, className }: SmoothScrollLinkProps) {
+export default function SmoothScrollLink({ href, children, className, onClick }: SmoothScrollLinkProps) {
     const handleClick = (e: MouseEvent<HTMLAnchorElement>) => {
         // Only handle hash links (anchor links)
         if (href.startsWith('#')) {
@@ -23,6 +24,7 @@ export default function SmoothScrollLink({ href, children, className }: SmoothSc
 
                 // Update URL to remove hash
                 history.pushState(null, '', window.location.pathname);
+                onClick?.();
                 return;
             }
 
@@ -42,6 +44,9 @@ export default function SmoothScrollLink({ href, children, className }: SmoothSc
                 // Update URL hash without jumping
                 history.pushState(null, '', href);
             }
+            
+            // Call the additional onClick handler if provided
+            onClick?.();
         }
     };
 

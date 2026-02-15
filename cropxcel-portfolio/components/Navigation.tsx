@@ -1,6 +1,8 @@
 'use client';
 
 import { Poppins } from "next/font/google";
+import { Menu, X } from "lucide-react";
+import { useState } from "react";
 import SmoothScrollLink from "./SmoothScrollLink";
 import { useLanguage } from "@/components/LanguageContext";
 
@@ -12,9 +14,14 @@ const poppins = Poppins({
 
 export default function Navigation() {
     const { language, setLanguage, t } = useLanguage();
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleLanguage = () => {
         setLanguage(language === 'en' ? 'kh' : 'en');
+    };
+
+    const closeMenu = () => {
+        setIsMenuOpen(false);
     };
 
     return (
@@ -39,6 +46,8 @@ export default function Navigation() {
                             </span>
                         </SmoothScrollLink>
                     </div>
+                    
+                    {/* Desktop Navigation */}
                     <div className="hidden md:flex space-x-8 items-center">
                         <SmoothScrollLink
                             href="#impact"
@@ -71,8 +80,61 @@ export default function Navigation() {
                             </button>
                         </div>
                     </div>
+
+                    {/* Mobile Navigation */}
+                    <div className="md:hidden flex items-center justify-center flex-1">
+                        <button
+                            onClick={() => setIsMenuOpen(!isMenuOpen)}
+                            className="text-gray-600 hover:text-green-600 transition p-2"
+                            aria-label="Toggle menu"
+                        >
+                            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+                        </button>
+                    </div>
+                    
+                    {/* Mobile Language Toggle */}
+                    <div className="md:hidden">
+                        <button
+                            onClick={toggleLanguage}
+                            className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 transition font-bold text-sm text-gray-700 border border-gray-200"
+                            title={language === 'en' ? "Switch to Khmer" : "ប្តូរទៅភាសាអង់គ្លេស"}
+                        >
+                            {language === 'en' ? "KH" : "EN"}
+                        </button>
+                    </div>
                 </div>
             </div>
+
+            {/* Mobile Menu */}
+            {isMenuOpen && (
+                <div className="md:hidden bg-white border-t border-gray-100">
+                    <div className="px-4 py-4 space-y-3">
+                        <SmoothScrollLink
+                            href="#impact"
+                            className="block text-center text-gray-600 hover:text-green-600 transition py-2"
+                            onClick={closeMenu}
+                        >
+                            {t("nav_impact")}
+                        </SmoothScrollLink>
+                        <SmoothScrollLink
+                            href="#features"
+                            className="block text-center text-gray-600 hover:text-green-600 transition py-2"
+                            onClick={closeMenu}
+                        >
+                            {t("nav_features")}
+                        </SmoothScrollLink>
+                        <a
+                            href="https://calendly.com/kosolchou/30min"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block w-full text-center bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition"
+                            onClick={closeMenu}
+                        >
+                            {t("nav_book_demo")}
+                        </a>
+                    </div>
+                </div>
+            )}
         </nav>
     );
 }

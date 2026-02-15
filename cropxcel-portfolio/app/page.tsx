@@ -69,7 +69,7 @@ export default function Home() {
               {/* Feature 1 - Image Left */}
               <FadeUpOnScroll delay={0}>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                  <div className="relative h-80 lg:h-96 overflow-hidden rounded-2xl shadow-lg">
+                  <div className="relative h-80 lg:h-96 overflow-hidden rounded-2xl shadow-lg order-1 lg:order-1">
                     <Image
                       src="/images/first_feature.png" // Double check image path if needed, keeping original
                       alt="Satellite Monitoring"
@@ -77,7 +77,7 @@ export default function Home() {
                       className="object-cover hover:scale-105 transition duration-500"
                     />
                   </div>
-                  <div className="space-y-4">
+                  <div className="space-y-4 order-2 lg:order-2">
                     <h3 className="text-3xl font-bold text-gray-900">{t("feature_1_title")}</h3>
                     <p className="text-lg text-gray-600 leading-relaxed">
                       {t("feature_1_desc")}
@@ -89,13 +89,13 @@ export default function Home() {
               {/* Feature 2 - Image Right */}
               <FadeUpOnScroll delay={200}>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                  <div className="space-y-4 lg:order-1">
+                  <div className="space-y-4 order-2 lg:order-1">
                     <h3 className="text-3xl font-bold text-gray-900">{t("feature_2_title")}</h3>
                     <p className="text-lg text-gray-600 leading-relaxed">
                       {t("feature_2_desc")}
                     </p>
                   </div>
-                  <div className="relative h-80 lg:h-96 overflow-hidden rounded-2xl shadow-lg lg:order-2">
+                  <div className="relative h-80 lg:h-96 overflow-hidden rounded-2xl shadow-lg order-1 lg:order-2">
                     <Image
                       src="/images/second_feature.png"
                       alt="Early Warning System"
@@ -109,7 +109,7 @@ export default function Home() {
               {/* Feature 3 - Image Left */}
               <FadeUpOnScroll delay={400}>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                  <div className="relative h-80 lg:h-96 overflow-hidden rounded-2xl shadow-lg">
+                  <div className="relative h-80 lg:h-96 overflow-hidden rounded-2xl shadow-lg order-1 lg:order-1">
                     <Image
                       src="/images/third_feature.png"
                       alt="Native Khmer App"
@@ -117,7 +117,7 @@ export default function Home() {
                       className="object-cover hover:scale-105 transition duration-500"
                     />
                   </div>
-                  <div className="space-y-4">
+                  <div className="space-y-4 order-2 lg:order-2">
                     <h3 className="text-3xl font-bold text-gray-900">{t("feature_3_title")}</h3>
                     <p className="text-lg text-gray-600 leading-relaxed">
                       {t("feature_3_desc")}

@@ -15,7 +15,7 @@ const translations: Translations = {
     // Navigation
     nav_home: { en: "Home", kh: "ទំព័រដើម" },
     nav_features: { en: "Features", kh: "លក្ខណៈពិសេស" },
-    nav_impact: { en: "Impact", kh: "ផលប៉ះពាល់" },
+    nav_impact: { en: "Impact", kh: "ផលចំណេញ" },
     nav_contact: { en: "Contact", kh: "ទំនាក់ទំនង" },
     nav_book_demo: { en: "Book Demo", kh: "កក់ការសាកល្បង" },
 
@@ -30,7 +30,7 @@ const translations: Translations = {
     hero_after_label: { en: "RGB Map", kh: "ផែនទី RGB" },
 
     // Impact Section
-    impact_title: { en: "Impact & ROI", kh: "ផលប៉ះពាល់ និង ផលចំណេញ" },
+    impact_title: { en: "Impact & ROI", kh: "ផលចំណេញ" },
     impact_subtitle: {
         en: "Transforming agriculture with data-driven insights that deliver measurable results",
         kh: "ផ្លាស់ប្តូរកសិកម្មជាមួយនឹងការយល់ដឹងផ្អែកលើទិន្នន័យដែលផ្តល់លទ្ធផលជាក់ស្តែង"
