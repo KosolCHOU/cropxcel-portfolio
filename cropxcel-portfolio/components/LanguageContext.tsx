@@ -18,6 +18,8 @@ const translations: Translations = {
     nav_impact: { en: "Impact", kh: "ផលចំណេញ" },
     nav_contact: { en: "Contact", kh: "ទំនាក់ទំនង" },
     nav_book_demo: { en: "Book Demo", kh: "កក់ការសាកល្បង" },
+    nav_team: { en: "Team", kh: "ក្រុមការងារ" },
+    nav_sdgs: { en: "SDGs", kh: "SDGs" },
 
     // Hero Section
     hero_title_prefix: { en: "Insight Agriculture for", kh: "កសិកម្មឆ្លាតវៃសម្រាប់" },

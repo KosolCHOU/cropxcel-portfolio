@@ -46,7 +46,7 @@ export default function Navigation() {
                             </span>
                         </SmoothScrollLink>
                     </div>
-                    
+
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex space-x-8 items-center">
                         <SmoothScrollLink
@@ -60,6 +60,18 @@ export default function Navigation() {
                             className="text-gray-600 hover:text-green-600 transition"
                         >
                             {t("nav_features")}
+                        </SmoothScrollLink>
+                        <SmoothScrollLink
+                            href="#sdgs"
+                            className="text-gray-600 hover:text-green-600 transition"
+                        >
+                            {t("nav_sdgs")}
+                        </SmoothScrollLink>
+                        <SmoothScrollLink
+                            href="#team"
+                            className="text-gray-600 hover:text-green-600 transition"
+                        >
+                            {t("nav_team")}
                         </SmoothScrollLink>
 
                         <div className="flex items-center space-x-4">
@@ -91,7 +103,7 @@ export default function Navigation() {
                             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
                         </button>
                     </div>
-                    
+
                     {/* Mobile Language Toggle */}
                     <div className="md:hidden">
                         <button
@@ -122,6 +134,20 @@ export default function Navigation() {
                             onClick={closeMenu}
                         >
                             {t("nav_features")}
+                        </SmoothScrollLink>
+                        <SmoothScrollLink
+                            href="#sdgs"
+                            className="block text-center text-gray-600 hover:text-green-600 transition py-2"
+                            onClick={closeMenu}
+                        >
+                            {t("nav_sdgs")}
+                        </SmoothScrollLink>
+                        <SmoothScrollLink
+                            href="#team"
+                            className="block text-center text-gray-600 hover:text-green-600 transition py-2"
+                            onClick={closeMenu}
+                        >
+                            {t("nav_team")}
                         </SmoothScrollLink>
                         <a
                             href="https://calendly.com/kosolchou/30min"

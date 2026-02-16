@@ -23,10 +23,19 @@ export default function Footer() {
                         <h4 className="font-semibold text-lg mb-4 text-white">{t("footer_explore")}</h4>
                         <ul className="space-y-2 text-sm text-gray-400">
                             <li>
-                                <a href="#features" className="hover:text-green-400 transition">{t("nav_features")}</a>
+                                <a href="#" className="hover:text-green-400 transition">{t("nav_home")}</a>
                             </li>
                             <li>
                                 <a href="#impact" className="hover:text-green-400 transition">{t("nav_impact")}</a>
+                            </li>
+                            <li>
+                                <a href="#features" className="hover:text-green-400 transition">{t("nav_features")}</a>
+                            </li>
+                            <li>
+                                <a href="#sdgs" className="hover:text-green-400 transition">{t("nav_sdgs")}</a>
+                            </li>
+                            <li>
+                                <a href="#team" className="hover:text-green-400 transition">{t("nav_team")}</a>
                             </li>
                         </ul>
                     </div>

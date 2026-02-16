@@ -5,6 +5,7 @@ import ImageComparisonSlider from "@/components/ImageComparisonSlider";
 import FadeUpOnScroll from "@/components/FadeUpOnScroll";
 import ImpactSection from "@/components/ImpactSection";
 import SDGSection from "@/components/SDGSection";
+import TeamSection from "@/components/TeamSection";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/components/LanguageContext";
 
@@ -132,6 +133,11 @@ export default function Home() {
         {/* SDG SECTION */}
         <FadeUpOnScroll>
           <SDGSection />
+        </FadeUpOnScroll>
+
+        {/* TEAM SECTION */}
+        <FadeUpOnScroll>
+          <TeamSection />
         </FadeUpOnScroll>
 
       </main>
