@@ -106,7 +106,7 @@ export default function TeamSection() {
                                 {/* Social Links - Add when available */}
                                 <div className="flex gap-4 pt-6">
                                     <a
-                                        href="https://www.linkedin.com/in/chettra-nang-a35b23375/"
+                                        href="https://www.linkedin.com/in/chettra-nang/"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="text-gray-400 hover:text-blue-600 transition-colors"
